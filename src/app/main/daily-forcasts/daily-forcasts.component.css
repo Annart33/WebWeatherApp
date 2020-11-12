@@ -1,0 +1,28 @@
+.five-day-forcast-container{
+    display: flex;
+    margin-top: -35px;
+}
+
+.upcoming-forcast{
+    margin: 50px;
+    flex-direction: row;
+    border-radius: 16px;
+    width: 230px;
+    height: 130px;
+    text-align: center;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+    background-color: #fdfdfd;
+    list-style-type: none;
+    position: relative;
+    padding-top: 61px;
+}
+
+.forcast-date{
+    font-size: 20px;
+    font-family: 'Droid serif', serif; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; 
+    margin: 0 0 12px; 
+    text-align: center;
+}

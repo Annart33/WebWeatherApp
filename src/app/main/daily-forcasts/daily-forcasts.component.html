@@ -1,0 +1,7 @@
+<ul class="five-day-forcast-container">
+    <li class="upcoming-forcast" *ngFor="let f of forcast.DailyForecasts">
+        <span class="forcast-date"> {{ f.Date | date:'fullDate' }}</span><br>
+        <span class="forcast-max-temp"> Max Temp. {{ f.Temperature.Maximum.Value }} °F</span><br>
+        <span class="forcast-min-temp"> Min Temp. {{ f.Temperature.Minimum.Value }} °F</span><br>
+    </li>
+</ul>

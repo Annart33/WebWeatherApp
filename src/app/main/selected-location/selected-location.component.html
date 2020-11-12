@@ -1,0 +1,19 @@
+<div class="selected-location-container">
+    <div *ngFor="let w of weather" class="location-weather">
+        <div id="day-time">
+            <img [hidden]="!isDayTime" src="../../../assets/images/sunny.png" alt="Daytime Sun">
+            <img [hidden]="isDayTime" src="../../../assets/images/nature.png" alt="Night time moon"></div><br>
+        <span id="location-name">{{ selectedLocationName }}</span><br>
+        <span id="date">{{ w.LocalObservationDateTime | date:'fullDate' }}</span><br>
+        <span id="weather">{{ w.WeatherText }}</span><br>
+        <span id="temp">Temp. {{ w.Temperature.Metric.Value }}°C</span>
+    </div>
+    <div [hidden]="weather === undefiend" class="add-to-favorites">
+        <div class="btn-wrapper">
+            <img class="heart-icon" src="../../../assets/images/heart.png">
+            <a class="location-btn" role="button" name="favoritesBtn" id="addToFavorites"
+                (click)="addToFavorites($event)" ngDefaultControl>
+                {{ favoriteBtnStatus }}</a>
+        </div>
+    </div>
+</div>

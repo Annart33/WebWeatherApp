@@ -1,0 +1,36 @@
+.heading-container h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+ul.favorite-locatios{
+    text-align: center;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.remove-heart-icon{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    padding-right: 2px;
+}
+
+.btn-wrapper{
+    display: inline;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+a.remove-item-from-list{
+    font-size: 15px;
+}
+
+a.remove-item-from-list:hover, a.go-to-location:hover{
+    color: purple;
+    cursor: pointer;
+}
+
+a.go-to-location{
+    margin-left: -20px;
+}

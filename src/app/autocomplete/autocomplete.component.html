@@ -1,0 +1,11 @@
+<h2 class="autocomplete-heading">Select Your Location</h2>
+<div class="combobox" (handleOutsideClick)="clickOutsideDropdown($event)" role="combobox" aria-owns="owned_listbox">
+    <input type="text" class="location-search" [(ngModel)]="inputValue" aria-label="Search for a city"
+        (keyup)="onKeyPress($event)" placeholder="Search for a city" id="autocomplete">
+    <ul class="locations-dropdown" role="listbox" id="owned_listbox" *ngIf="isDropdownActive" [(ngModel)]="locatioKey"
+        name="location" ngDefaultControl>
+        <li *ngFor="let l of locations" role="option" [value]="l" (click)="onLocationSelected(l)">
+            {{ l.Country.LocalizedName }},
+            {{ l.LocalizedName }}</li>
+    </ul>
+</div>

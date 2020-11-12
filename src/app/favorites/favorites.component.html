@@ -1,0 +1,15 @@
+<div class="favorites-container">
+    <div class="heading-container">
+        <h2>Your Favorite Locations</h2>
+    </div>
+    <ul class="favorite-locatios">
+        <li *ngFor="let l of locations">
+            <a class="go-to-location" (click)="goToLocation(l)"> {{ l.LocalizedName }},
+                {{ l.Country.LocalizedName }}</a>
+            <div class="btn-wrapper">
+                <img class="remove-heart-icon" src="../../assets/images/delete.png" alt="Remove from favorites">
+                <a class="remove-item-from-list" (click)="removeFromList(l)" role="button">Remove From List</a>
+            </div>
+        </li>
+    </ul>
+</div>

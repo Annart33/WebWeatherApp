@@ -1,0 +1,44 @@
+ul.locations-dropdown {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color:  #fdfdfd;
+    width: 340px;
+    margin-top: 0px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    z-index: 1;
+}
+
+input.location-search{
+    margin-top: 20px;
+    width: 340px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-image: url(../../assets/images/shapes-and-symbols.png); 
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 97% 40%;
+    margin-right: 20px;
+    padding-left: 5px;
+}
+
+h2.autocomplete-heading{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+ul.locations-dropdown li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul.locations-dropdown li:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+ul.locations-dropdown{
+    padding: 0;
+}

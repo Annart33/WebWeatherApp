@@ -1,0 +1,11 @@
+.content-container{
+    position: relative;
+    display: grid;
+    grid-row-gap: 100px;
+}
+
+
+.autocomplete, .daily-forcast-container{
+    justify-self: center;
+}
+
